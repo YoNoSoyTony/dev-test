@@ -1,5 +1,6 @@
 import express from "express";
 import { JSONFilePreset } from "lowdb/node";
+import cors from "cors";
 import jwt from "jsonwebtoken";
 
 // database setup
@@ -12,6 +13,7 @@ const secret_key =
 
 // express setup
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 // support middlewares
