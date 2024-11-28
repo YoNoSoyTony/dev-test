@@ -6,13 +6,6 @@ function BasePage() {
   const [token, setToken] = useState("");
   const [user, setUser] = useState(false);
 
-  useEffect(() => {
-    console.log(token);
-  }, [token]);
-  useEffect(() => {
-    console.log(user);
-  }, [user]);
-
   return (
     <div>
       {user && (
